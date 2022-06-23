@@ -3,10 +3,29 @@ layout: default
 title: mookax
 ---
 
-<!-- 遍历分页后的文章 -->
 {% for post in site.posts %}
+  ---
   <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-  <p class="author">
-    <span class="date">{{ post.date }}</span>
-  </p>
+  <p>{{ post.excerpt }}</p>
 {% endfor %}
+
+
+<br>
+
+{% for album in site.go %}
+  ---
+  <h1><a href="{{ album.url }}">{{ album.title }}</a></h1>
+  <p>{{ album.categories }}</p>
+{% endfor %}
+
+<br>
+
+{% for album in site.cc %}
+  ---
+  <h1><a href="{{ album.url }}">{{ album.title }}</a></h1>
+  <p>{{ album.categories }}</p>
+{% endfor %}
+
+
+<br>
+<br>
