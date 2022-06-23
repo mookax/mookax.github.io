@@ -3,7 +3,7 @@ email: mookax@foxmail.com
 description: >-
   mookax developer
 
-theme: minima
+theme: jekyll-theme-modernist
 
 collections:
   go:
